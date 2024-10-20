@@ -646,7 +646,7 @@ body{
 }
 .textLetter{
     position: relative;
-    width: 60%;
+    width: 80%;
     flex-direction: column;
     display: flex;
     align-items: center;

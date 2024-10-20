@@ -120,12 +120,15 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script>
-         document.body.addEventListener('click', () => {
-            const music = document.getElementById('background-music');
-            if (music.paused) {
-                music.play();
-            }
-        })
+        document.body.addEventListener('click', () => {
+    const music = document.getElementById('background-music');
+    if (music.paused) {
+        music.play().catch((error) => {
+            console.error("Error trying to play the music:", error);
+        });
+    }
+});
+
     
     $(window).on('load', function(event){
     $('body').removeClass('preloading');

@@ -10,13 +10,6 @@
 <body>
      <audio id="background-music" src="Crush.mp3" preload="auto"></audio>
     
-     document.body.addEventListener('click', () => {
-            const music = document.getElementById('background-music');
-            if (music.paused) {
-                music.play();
-            }
-        });
-    
     <div class="wrapper">
         <!-- <img src="../thư love.png" alt=""> -->
         <div class="formInput">
@@ -127,6 +120,13 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script>
+         document.body.addEventListener('click', () => {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play();
+            }
+        })
+    
     $(window).on('load', function(event){
     $('body').removeClass('preloading');
     $('.loadingLove').delay(1000).fadeOut('fast');

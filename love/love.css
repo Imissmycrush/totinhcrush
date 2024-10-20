@@ -15,9 +15,6 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.contentLetter {
-    font-size: 40px; /* Adjust the size as needed */
-}
 
 .formInput{
     position: absolute;
